@@ -14,7 +14,7 @@
     "ftp_proxy": "{{env `ftp_proxy`}}",
     "rsync_proxy": "{{env `rsync_proxy`}}",
     "no_proxy": "{{env `no_proxy`}}",
-    "xn_jruby_version": "1.7.18",
+    "xn_jruby_version": "1.7.20",
     "xn_timezone": "America/Toronto",
     "xn_client": "default",
     "xn_datomic_version": "0.9.5130",
