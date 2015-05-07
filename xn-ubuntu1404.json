@@ -22,8 +22,8 @@
     "cpus": "4",
     "mem": "2048",
     "disk": "10140",
-    "iso_url": "http://releases.ubuntu.com/14.04/ubuntu-14.04.1-server-amd64.iso",
-    "iso_checksum": "401c5f6666fe2879ac3a9a3247b487723410cf88",
+    "iso_url": "http://releases.ubuntu.com/14.04/ubuntu-14.04.2-server-amd64.iso",
+    "iso_checksum": "3bfa6eac84d527380d0cc52db9092cde127f161e",
     "custom_script": "script/xn_provision.sh"
   },
   "builders": [{
@@ -154,8 +154,7 @@
       "script/vagrant.sh",
       "script/sshd.sh",
       "script/vmtool.sh",
-      "script/docker.sh",
-      "script/cmtool.sh"
+      "script/docker.sh"
     ]
   },
   {
