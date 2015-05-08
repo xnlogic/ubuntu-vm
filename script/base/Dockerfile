@@ -36,7 +36,7 @@ WORKDIR $HOME
 
 RUN /bin/bash -l -c "echo 'progress-bar' > $HOME/.curlrc"
 
-ENV jruby_version 1.7.18
+ENV jruby_version 1.7.20
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
 RUN curl -L get.rvm.io | bash -s stable --auto-dotfiles
 RUN /etc/profile.d/rvm.sh
@@ -58,7 +58,7 @@ ADD https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein $HOM
 RUN chmod a+x $HOME/bin/lein
 RUN /bin/bash -l -c "lein"
 
-RUN gem install --quiet torquebox-server -v '3.1.1'
+RUN gem install --quiet torquebox-server -v '3.1.2'
 
 ADD `pwd`/data /
 WORKDIR /data
